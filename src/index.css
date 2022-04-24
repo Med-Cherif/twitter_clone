@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #1DA1F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar-icon > svg {
+  font-size: 26px;
+}
+
+.toggle-theme-btn {
+  transition-property: left, transform;
+  transition-duration: 1000ms;
+}
+
+.toggle-theme-btn.dark {
+  transform: rotate(360deg);
+}
+
+.main::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
