@@ -8,7 +8,7 @@ const Post = () => {
     return (
         <div className='p-3 pb-4 border-b border-gray-500'>
         <div className="flex gap-3">
-            <div>
+            <div className='min-w-[48px]'>
                 <img className="w-12 h-12 rounded-full object-cover" src={Picture} alt="" />
             </div>
             <div className="flex-1">
